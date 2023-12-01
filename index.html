@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("evansaid").value;
+            var password = document.getElementById("evansaid").value;
+
+            // Check the username and password
+            if (username === "yourUsername" && password === "yourPassword") {
+                // Display the content after successful login
+                document.getElementById("content").style.display = "block";
+            } else {
+                // Display an error message if login fails
+                alert("Invalid username or password. Please try again.");
+            }
+
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+
+    <form onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <br/>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <div id="content" style="display: none;">
+        <h2>Welcome!</h2>
+        <img src="/images/evan.jpeg" alt="Welcome">
+    </div>
+</body>
+
+</html>
