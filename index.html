@@ -5,16 +5,16 @@
     <title>Login Page</title>
     <script>
         function validateForm() {
-            var username = document.getElementById("evansaid").value;
-            var password = document.getElementById("evansaid").value;
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
 
             // Check the username and password
-            if (username === "yourUsername" && password === "yourPassword") {
+            if (username === "evansaid" && password === "evansaid") {
                 // Display the content after successful login
                 document.getElementById("content").style.display = "block";
             } else {
                 // Display an error message if login fails
-                alert("Invalid username or password. Please try again.");
+                alert("Invalid username or password. Please try again.");`
             }
 
             // Prevent form submission
@@ -42,7 +42,7 @@
 
     <div id="content" style="display: none;">
         <h2>Welcome!</h2>
-        <img src="/images/evan.jpeg" alt="Welcome">
+        <!-- Add your content here -->
     </div>
 </body>
 
